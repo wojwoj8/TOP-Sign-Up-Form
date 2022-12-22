@@ -21,37 +21,33 @@
         </div>
         <div class="right">
             <div class="top">
-                <h2>This is not a real online service! Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Fusce maximus massa sed velit vulputate 
-                    tincidunt. Proin placerat sed magna vel porta. Nam ac volutpat quam. 
-                    Etiam a placerat odio. In maximus diam non facilisis egestas. 
-                    Nam consequat ligula mauris, vel ornare metus pulvinar non. 
-                    Etiam id dapibus elit, vel faucibus metus. Anyway if you wanna look like
-                    this guy on the left start working out and
-                    become a beast.</h2>
-                    <h2>Sign up now to get
-                        started.</h2>
+                <h2>This is not a real online service! Anyway if you wanna look like
+                    this guy on the left, start working out and become a beast.</h2>
+                    <h2>Sign up now to get started.</h2>
+                    <h2>You know you want to.</h2>
             </div>
             <div class="form">
                 <p>Let's do this!</p>
                 <div class="form-right">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name">
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="tel" name="number">
-                    <label for="conf_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="conf_password">
+                    <form action="http://127.0.0.1:5500/index.html" method="POST" name="bestform">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" required>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" name="number" required>
+                        <label for="conf_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="conf_password" required>
 
-                </div>
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password">
+                    </div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" required>
+                    </form>
                 </div>
             <div class="footer">
-                <p>footer</p>
+                <button type="submit" form="bestform">Create Account</button>
             </div>
         </div>
     </div>

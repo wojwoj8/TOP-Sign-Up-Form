@@ -5,7 +5,8 @@
 :root{
     --text-color: rgb(187, 181, 181);
     --left-width: 34vw;
-    --form-width: calc(100vw - var(var(--left-width)))
+    --form-width: calc(100vw - var(--left-width));
+    /* --margin-top-r: calc(var(--left-width) - 20vw); */
 }
 body{
     margin:0;
@@ -40,7 +41,7 @@ body{
     vertical-align: middle;
     color: white;
     font-family: odin;
-    font-size: 6rem;
+    font-size: 6.8rem;
     
 }
 /* icon */
@@ -61,13 +62,14 @@ body{
 }
 /* right part */
 .right{
+    font-family: sans-serif;
     /* margin: 6rem 5rem 10rem 6rem ; */
 }
 .top{
     /*      top  right bot left */
-    margin: 5rem 5rem 0rem 5rem ;
+    margin: 5rem 10vw 0rem 5rem ;
     text-align:left;
-    font-family: odin;
+    font-family: sans-serif;
     height:20vh;
     /* width:100vw; */
     color:var(--text-color);
@@ -79,14 +81,21 @@ body{
     background-color: #0e0e0e;
     height:40vh;
     color:var(--text-color);
+    box-shadow: 0 4px 8px 0 rgba(94, 91, 91, 0.2), 0 10px 20px 0 rgba(67, 64, 64, 0.19);
+}
+.form > p{
+    padding-top: 1rem;
+    font-size: 2rem;
 }
 label + input{
     margin-bottom: 2rem;
     margin-top: 0.5rem;
     width:25vw;
+    height:1.2rem;
 }
 .form-right{
     float:right;
+    margin-right: 5vw;
 }
 [for]{
     display: flex;
@@ -99,5 +108,12 @@ label + input{
     margin-left: 5rem;
     height: 20vh;
     color:var(--text-color);
-
+}
+.footer > button{
+    margin-top: 2rem;
+    background-color: black;
+    
+    color: var(--text-color);
+    /* width: 10rem;
+    height:10rem; */
 }
