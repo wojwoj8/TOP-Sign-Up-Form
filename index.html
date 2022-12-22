@@ -21,19 +21,19 @@
         </div>
         <div class="right">
             <div class="top">
-                <h2>This is not a real online service! Anyway if you wanna look like
-                    this guy on the left, start working out and become a beast.</h2>
-                    <h2>Sign up now to get started.</h2>
-                    <h2>You know you want to.</h2>
+                <h2>This is not a real online service! You know you need something like this in your 
+                    life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+                    
+                    <h2>You <em>know</em> you want to.</h2>
             </div>
             <div class="form">
                 <p>Let's do this!</p>
                 <div class="form-right">
-                    <form action="http://127.0.0.1:5500/index.html" method="POST" name="bestform">
+                    <form action="index.html" method="POST">
                         <label for="last_name">LAST NAME</label>
                         <input type="text" name="last_name" required>
                         <label for="number">PHONE NUMBER</label>
-                        <input type="tel" name="number" required>
+                        <input type="tel" name="number" minlength="9" maxlength="9" required>
                         <label for="conf_password">CONFIRM PASSWORD</label>
                         <input type="password" name="conf_password" required>
 
@@ -44,11 +44,14 @@
                         <input type="email" name="email" required>
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" required>
-                    </form>
+                    
                 </div>
             <div class="footer">
-                <button type="submit" form="bestform">Create Account</button>
+                <button type="submit">Create Account</button>
+                </form>
+                <h3>Already have an account? <a href="#">Log In</a></h3>
             </div>
+            
         </div>
     </div>
 </body>

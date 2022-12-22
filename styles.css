@@ -2,10 +2,15 @@
     font-family: odin;
     src: url(./Norse-Bold.otf);
 }
+:focus-visible{
+    outline: none;
+    
+}
 :root{
     --text-color: rgb(187, 181, 181);
-    --left-width: 34vw;
+    --left-width: 40vw;
     --form-width: calc(100vw - var(--left-width));
+    --blue: rgb(75, 111, 184);
     /* --margin-top-r: calc(var(--left-width) - 20vw); */
 }
 body{
@@ -17,7 +22,7 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 /* left part */
 .left-img , #backg{
@@ -70,7 +75,7 @@ body{
     margin: 5rem 10vw 0rem 5rem ;
     text-align:left;
     font-family: sans-serif;
-    height:20vh;
+    height:15vh;
     /* width:100vw; */
     color:var(--text-color);
 
@@ -78,29 +83,44 @@ body{
 .form{
     padding-left: 5rem;
     width:var(--form-width);
-    background-color: #0e0e0e;
+    /* background-color: #0e0e0e; */
+    background-image: linear-gradient(rgb(2, 2, 2), rgb(8, 8, 8), rgb(11, 11, 11));
     height:40vh;
     color:var(--text-color);
     box-shadow: 0 4px 8px 0 rgba(94, 91, 91, 0.2), 0 10px 20px 0 rgba(67, 64, 64, 0.19);
 }
 .form > p{
     padding-top: 1rem;
+    font-weight:bold;
     font-size: 2rem;
 }
-label + input{
+input{
     margin-bottom: 2rem;
     margin-top: 0.5rem;
-    width:25vw;
+    
+    width:22vw;
     height:1.2rem;
+    border-color: #0e0e0e;
+    border-width: 2px;
+    border-style:solid;
+    background-color: rgb(44, 46, 46);
+    color: var(--text-color)
+}
+input:focus-visible{
+    outline-color: var(--blue) !important;
+    border-color: var(--blue); 
+    
+    /* border: 23px var(--blue); */
 }
 .form-right{
     float:right;
-    margin-right: 5vw;
+    
+    margin-right: 10vw;
 }
 [for]{
     display: flex;
     flex-direction: column;
-    width:30vw;
+    width:22vw;
     font-size: 0.8rem;
 
 }
@@ -110,10 +130,32 @@ label + input{
     color:var(--text-color);
 }
 .footer > button{
-    margin-top: 2rem;
-    background-color: black;
-    
-    color: var(--text-color);
+    margin-top: 4rem;
+    background-color:#0e0e0e;
+    font-weight: 700;
+    /* border-color: rgb(255, 255, 255); */
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding:1rem;
+    color:var(--blue);
+    border-color: var(--blue);
+    /* color: var(--text-color); */
     /* width: 10rem;
     height:10rem; */
+}
+.footer > button:hover{
+    /* background-image: linear-gradient(black, rgb(24, 24, 24), rgb(65, 65, 65)); */
+    background-color: rgba(68, 114, 207, 0.781);
+    color:#0e0e0e;
+}
+h3{
+    margin-top: 3rem;
+}
+a{
+    color:var(--blue);
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(255, 255, 255);
 }
