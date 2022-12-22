@@ -1,0 +1,103 @@
+@font-face {
+    font-family: odin;
+    src: url(./Norse-Bold.otf);
+}
+:root{
+    --text-color: rgb(187, 181, 181);
+    --left-width: 34vw;
+    --form-width: calc(100vw - var(var(--left-width)))
+}
+body{
+    margin:0;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+/* left part */
+.left-img , #backg{
+    position:relative;
+    object-fit:cover;
+    width: var(--left-width);
+    height:115%;
+}
+/* icon background */
+.icon{
+    
+    position:absolute;
+    width:100%;
+    top:13rem;
+    background: black;
+    opacity: 0.6;
+    text-align:center;
+    z-index: 1;
+}
+.icon > span{
+    vertical-align: middle;
+    color: white;
+    font-family: odin;
+    font-size: 6rem;
+    
+}
+/* icon */
+.icon > #icon-odin{
+    vertical-align: middle;
+    width: 6rem;
+    
+}
+.author{
+    position:absolute;
+    background: black;
+    opacity: 0.6;
+    text-align:center;
+    z-index: 1;
+    width:100%;
+    bottom: 10rem;
+    color:white;
+}
+/* right part */
+.right{
+    /* margin: 6rem 5rem 10rem 6rem ; */
+}
+.top{
+    /*      top  right bot left */
+    margin: 5rem 5rem 0rem 5rem ;
+    text-align:left;
+    font-family: odin;
+    height:20vh;
+    /* width:100vw; */
+    color:var(--text-color);
+
+}
+.form{
+    padding-left: 5rem;
+    width:var(--form-width);
+    background-color: #0e0e0e;
+    height:40vh;
+    color:var(--text-color);
+}
+label + input{
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    width:25vw;
+}
+.form-right{
+    float:right;
+}
+[for]{
+    display: flex;
+    flex-direction: column;
+    width:30vw;
+    font-size: 0.8rem;
+
+}
+.footer{
+    margin-left: 5rem;
+    height: 20vh;
+    color:var(--text-color);
+
+}
